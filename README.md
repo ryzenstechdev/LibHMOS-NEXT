@@ -1,3 +1,4 @@
+# NOTE: none of those methods are working, we are trying to find a fix for them!!!
 Welcome to LibHMOS NEXT, a FREE documentation of Huawei's new Indipendent [OS](https://en.wikipedia.org/wiki/Operating_system).
 You are now in our Website's main page, here you can find all our links:
 
