@@ -22,7 +22,7 @@ As for now, we have a ARM64 version of HarmonyOS NEXT, here's some specification
 
 5) Unzip the Emulation package
 
-6) Run QEMU
+6) Run QEMU Emulator
    ```
     qemu-system-aarch64 -enable-kvm -machine virt -cpu host -display none -serial stdio -kernel Image -append console=ttyAMA0
    ```
