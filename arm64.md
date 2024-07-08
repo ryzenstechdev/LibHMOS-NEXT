@@ -18,13 +18,9 @@ As for now, we have a ARM64 version of HarmonyOS NEXT, here's some specification
    ```
 3) Download the [Emulation package](https://devuploads.com/vddyjezw9v4j) (**NOTE:** the archive password is "pwp114514")
 4) Unzip the Emulation package
-   ```
-    unzip system-image-phone-x86-DB1.zip /system-image-phone-x86-DB1
-    cd system-image-phone-x86-DB1
-   ```
 5) Run QEMU
    ```
-    qemu-system-x86 -enable-kvm -machine virt -cpu host -display none -serial stdio -kernel Image -append console=ttyAMA0
+    qemu-system-aarch64 -enable-kvm -machine virt -cpu host -display none -serial stdio -kernel Image -append console=ttyAMA0
    ```
    **Note:**
      - Remove "-enable-kvm" if it gives you an error
