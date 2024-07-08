@@ -11,21 +11,26 @@ As for now, we have a ARM64 version of HarmonyOS NEXT, here's some specification
 # How to test it:
 
 1) Start your Linux (ARM64) Machine
-2) Install all the needed packages:
+
+3) Install all the needed packages:
    ```
     sudo apt update && sudo apt upgrade
     sudo apt-get install qemu-system
    ```
-3) Download the [Emulation package](https://devuploads.com/vddyjezw9v4j) (**NOTE:** the archive password is "pwp114514")
-4) Unzip the Emulation package
-5) Run QEMU
+4) Download the [Emulation package](https://devuploads.com/vddyjezw9v4j) (**NOTE:** the archive password is "pwp114514")
+
+6) Unzip the Emulation package
+7) Run QEMU
    ```
     qemu-system-aarch64 -enable-kvm -machine virt -cpu host -display none -serial stdio -kernel Image -append console=ttyAMA0
    ```
    **Note:**
      - Remove "-enable-kvm" if it gives you an error
+   
      - Remove "-cpu host" if your running this into a VM
+   
      - Remove "-display none" if you want to see a display output
-6) Enjoy!
+       
+8) Enjoy!
 
 [Home](https://ryzenstechdev.github.io/LibHMOS-NEXT/)
